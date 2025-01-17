@@ -196,7 +196,7 @@ strong {
 .animated-info {
   display: inline-block;
   vertical-align: top;
-  min-width: 250px;
+  min-width: 220px;
   position: relative;
 }
 
@@ -849,7 +849,7 @@ strong {
   }
 
   .animated-info {
-    min-width: 125px;
+    min-width: 100px;
   }
 
   .featured-circle {
