@@ -85,7 +85,6 @@ whyUsItems.forEach(item => {
     });
 });
 
-make it a bit slower
 
     
   })(window.jQuery);
