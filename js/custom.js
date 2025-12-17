@@ -66,5 +66,26 @@
     });
 
 
+        // WHY US ACCORDION
+const whyUsItems = document.querySelectorAll(".why-us-item");
+
+whyUsItems.forEach(item => {
+    const header = item.querySelector(".why-us-header");
+
+    header.addEventListener("click", () => {
+        // close others
+        whyUsItems.forEach(i => {
+            if (i !== item) {
+                i.classList.remove("active");
+            }
+        });
+
+        // toggle current
+        item.classList.toggle("active");
+    });
+});
+
+make it a bit slower
+
     
   })(window.jQuery);
