@@ -99,7 +99,7 @@ body {
   max-height: 0;
   overflow: hidden;
   background: var(--white-color);
-  transition: max-height 0.7s ease;
+  transition: max-height 3s ease;
 }
 
 .why-us-content p {
@@ -1133,6 +1133,7 @@ strong {
     left: 42px;
   }
 }
+
 
 
 
