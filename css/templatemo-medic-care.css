@@ -91,7 +91,7 @@ body {
   font-size: 28px;
   font-weight: var(--font-weight-bold);
   color: var(--primary-color);
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 
 /* CONTENT */
@@ -1133,6 +1133,7 @@ strong {
     left: 42px;
   }
 }
+
 
 
 
