@@ -66,28 +66,25 @@
     });
 
 
+        // WHY US ACCORDION
 const whyUsItems = document.querySelectorAll(".why-us-item");
 
 whyUsItems.forEach(item => {
     const header = item.querySelector(".why-us-header");
-    const content = item.querySelector(".why-us-content");
 
     header.addEventListener("click", () => {
-        const isOpen = item.classList.contains("active");
-
-        // close all
+        // close others
         whyUsItems.forEach(i => {
-            i.classList.remove("active");
-            i.querySelector(".why-us-content").style.height = "0px";
+            if (i !== item) {
+                i.classList.remove("active");
+            }
         });
 
-        // open clicked one
-        if (!isOpen) {
-            item.classList.add("active");
-            content.style.height = content.scrollHeight + "px";
-        }
+        // toggle current
+        item.classList.toggle("active");
     });
 });
+
 
 
     
