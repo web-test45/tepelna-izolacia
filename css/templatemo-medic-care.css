@@ -46,6 +46,61 @@ body {
   TYPOGRAPHY               
 -----------------------------------------*/
 
+
+
+/*---------------------------------------
+  GALLERY SECTION – REDESIGN
+-----------------------------------------*/
+
+.gallery-section {
+  background: var(--section-bg-color);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.12);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+/* Hover zoom */
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Slight overlay on hover */
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.15);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Mobile polish */
+@media (max-width: 767px) {
+  .gallery-item {
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
 /*---------------------------------------
   OFFER CARDS – POLISHED DESIGN
 -----------------------------------------*/
@@ -995,5 +1050,6 @@ strong {
     left: 42px;
   }
 }
+
 
 
